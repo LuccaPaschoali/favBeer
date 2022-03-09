@@ -2,7 +2,7 @@ import pandas as pd
 
 i = 0
 
-#nome do user
+#username
 while True:
     try:
         nm_user = input("Olá, qual o seu nome?\n")
@@ -19,7 +19,7 @@ while True:
         continue
         
 
-#maior de idade
+#age check
 while True:
     try:
         idade = input("Você é maior de Idade?(s/n)\n")
@@ -38,7 +38,7 @@ while True:
 print("Bem vindo(a)", nm_user,"!\n")
 
 
-#chamando a base de dados com as infos das cervejas
+#getting the csv file data with pandas
 df = pd.read_csv('cervejas_ambev.csv',encoding='ISO-8859-1')
 
 while True:
